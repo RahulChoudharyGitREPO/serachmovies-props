@@ -1,0 +1,28 @@
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+  grid-gap: 10px; /* Spacing between columns */
+  margin: 0 auto;
+  width: 80%; /* Adjust container width as needed */
+}
+
+.movie-item {
+  display: flex;
+  flex-direction: column; /* Stack items vertically within each column */
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+  flex: none; /* Allow image to shrink if needed */
+  width: 100%; /* Image takes full width of the movie item */
+  margin-bottom: 10px; /* Spacing between poster and title */
+}
+
+.movie-info {
+  flex: 1; /* Allows title to expand and fill remaining space */
+}
